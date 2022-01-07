@@ -42,3 +42,4 @@ if __name__ == "__main__":
     assert sum_numbers("5 plus 6 is") == 11
     assert sum_numbers("") == 0
     print("Coding complete? Click 'Check' to earn cool rewards!")
+    #added
