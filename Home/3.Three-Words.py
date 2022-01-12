@@ -22,9 +22,22 @@
 
 # Precondition: The input contains words and/or numbers. There are no mixed words (letters and digits combined).
 # 0 < len(words) < 100
-
 def checkio(words: str) -> bool:
-    return True or False
+    a= words.split();
+    final = False;
+    result =0;
+    for i in a:
+        if i.isalpha():
+            result=result+1
+            
+            if result ==3:
+                return True
+        else:
+            result=0
+                
+        
+    
+    return final
 
 #These "asserts" using only for self-checking and not necessary for auto-testing
 if __name__ == '__main__':
