@@ -34,7 +34,7 @@ def between_markers(text: str, begin: str, end: str) -> str:
     if end in text:
         b=text.index(end) 
     else:
-        len(text)
+        b=len(text)
     
     
     return text[a:b]
