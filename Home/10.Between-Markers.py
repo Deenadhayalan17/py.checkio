@@ -25,12 +25,19 @@ def between_markers(text: str, begin: str, end: str) -> str:
         returns substring between two given markers
     """
     # your code here
-
-
-
-
+    a=0
+    b=0
+    if begin in text:
+        a=text.index(begin) + len(begin)
+    else:
+        a=0
+    if end in text:
+        b=text.index(end) 
+    else:
+        len(text)
     
-    return ''
+    
+    return text[a:b]
 
 
 if __name__ == '__main__':
