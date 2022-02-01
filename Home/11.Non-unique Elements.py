@@ -27,7 +27,14 @@ def checkio(data: list) -> list:
     #It's used for auto-testing and must return a result for check.  
 
     #replace this for solution
-    return data
+    newlist=[]
+    for i in data:
+        if data.count(i)>1:
+            newlist.append(i)
+    return newlist
+    
+# Another solution 
+#       return [n for n in data if data.count(n) > 1]
 
 #Some hints
 #You can use list.count(element) method for counting.
