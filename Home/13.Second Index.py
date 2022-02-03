@@ -12,12 +12,13 @@
 # second_index("find the river", "e") == 12
 # second_index("hi", " ") is None
 
+
 def second_index(text: str, symbol: str) -> [int, None]:
     """
         returns the second index of a symbol in a given text
     """
     # your code here
-    return 0
+    return text.find(symbol, text.find(symbol) + 1) if  text.count(symbol) >= 2 else None
 
 
 if __name__ == '__main__':
