@@ -20,6 +20,8 @@ def second_index(text: str, symbol: str) -> [int, None]:
     # your code here
     return text.find(symbol, text.find(symbol) + 1) if  text.count(symbol) >= 2 else None
 
+    # notes:
+        # find(word to find, start , end)
 
 if __name__ == '__main__':
     print('Example:')
