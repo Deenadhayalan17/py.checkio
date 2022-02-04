@@ -1,9 +1,5 @@
-symbol='s'
-text='sims'
-print(text.find(symbol))
-print(text.find(symbol) + 1)
-a= text.find(symbol, text.find(symbol) + 1) 
+d = {'one':1,'three':3,'five':5,'two':2,'four':4}
 
-print(a)
+a = sorted(d.items(), key=lambda x: x[1])   
  
-#  if  text.count(symbol) >= 2 else None
+print(a)
