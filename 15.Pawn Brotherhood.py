@@ -20,6 +20,9 @@
 # 2
 # How it is used: For a game AI one of the important tasks is the ability to estimate game state. This concept will show how you can do this on the simple chess figures positions.
 
+import code
+
+
 def safe_pawns(pawns: set) -> int:
     safe = 0
     for col, row in pawns:
@@ -30,6 +33,9 @@ def safe_pawns(pawns: set) -> int:
             safe += 1
 
     return safe
+
+    # notes
+# ord -- string code (ordinal code)
 
 
 if __name__ == '__main__':
