@@ -27,8 +27,12 @@ from typing import Union
 def sun_angle(time: str) -> Union[int, str]:
     # replace this for solution
     hours, minutes = list(map(int, time.split(':')))
-
-    return time
+    a = hours-6
+    b = minutes/4
+    c = a*15 + b
+    if c > 180 or c < 0:
+        return "I don't see the sun!"
+    return c
 
 
 if __name__ == '__main__':
