@@ -26,6 +26,8 @@ from typing import Union
 
 def sun_angle(time: str) -> Union[int, str]:
     # replace this for solution
+    hours, minutes = list(map(int, time.split(':')))
+
     return time
 
 
