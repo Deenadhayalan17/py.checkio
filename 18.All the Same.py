@@ -23,7 +23,11 @@ from typing import List, Any
 
 def all_the_same(elements: List[Any]) -> bool:
     # your code here
-    return True
+    a = set(elements)
+    if len(a) <= 1:
+        return True
+    else:
+        return False
 
 
 if __name__ == '__main__':
