@@ -32,7 +32,29 @@
 
 def date_time(time: str) -> str:
     # replace this for solution
-    return time
+    months = {
+        '01': 'January',
+        '02': 'February',
+        '03': 'March',
+        '04': 'April',
+        '05': 'May',
+        '06': 'June',
+        '07': 'July',
+        '08': 'August',
+        '09': 'September',
+        '10': 'October',
+        '11': 'November',
+        '12': 'December'
+    }
+    date = int(time[:2])
+    month = months[time[3:5]]
+    year = time[6:10]
+    hour = int(time[11:13])
+    minute = int(time[14:16])
+    h = 'hour' if hour == 1 else 'hours'
+    m = 'minute' if minute == 1 else 'minutes'
+
+    return f'{date} {month} {year} year {hour} {h} {minute} {m}'
 
 
 if __name__ == "__main__":
