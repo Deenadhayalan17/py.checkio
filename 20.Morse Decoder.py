@@ -22,6 +22,9 @@
 # 0 < len(message) < 100
 # The message will consists of numbers and English letters only.
 
+from unittest import result
+
+
 MORSE = {
     ".-": "a",
     "-...": "b",
@@ -64,8 +67,17 @@ MORSE = {
 
 def morse_decoder(code):
     # replace this for solution
+    word = ''
+    a = code.split("   ")
+    for i in a:
+        b = i.split(' ')
+        for j in b:
+            word += MORSE[j]
+        word += ' '
+    if word[0].isalpha():
+        word = word[0].upper() + word[1:]
 
-    return code
+    return word.strip()
 
 
 if __name__ == "__main__":
