@@ -28,7 +28,11 @@
 
 def checkio(values: list) -> list:
     # your code here
-    return values
+    a = sorted(values, key=abs)
+
+    return a
+
+# syntax : sorted(iterable, *, key=None, reverse=False)
 
 
 if __name__ == '__main__':
