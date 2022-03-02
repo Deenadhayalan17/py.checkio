@@ -30,7 +30,25 @@
 
 def words_order(text: str, words: list) -> bool:
     # your code here
+    a = text.split()
+
+    b = [x for x in a if x in words]
+    if b == words:
+        return True
     return False
+
+    # a = text.split()
+    # b = all(item in a for item in words)
+    # if b is True:
+    #     return True
+    # return False
+    # a = (text.split())
+    # b = set(words)
+    # if set(b).issubset(a):
+    #     return True
+    # return False
+
+    #   return list(dict.fromkeys([word for word in text.split() if word in words])) == words  -- how ?
 
 
 if __name__ == "__main__":
