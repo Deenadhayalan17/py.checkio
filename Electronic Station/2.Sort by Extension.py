@@ -32,6 +32,22 @@ def sort_by_ext(files: List[str]) -> List[str]:
         '.')[-1] if x.split('.')[-2] != '' else x.split('.')[0])
     return files
 
+    # skey = lambda s: (bool(s[:(i:=s.rfind('.'))]), s[i+1:], s[:i])
+    #  skey = lambda s: (bool(s[:(i:=s.rfind('.'))]), s[i+1:], s[:i])
+
+#     from typing import List, Tuple
+
+
+# def extension_and_name(filename: str) -> Tuple[str]:
+#     i = filename.rfind('.')
+#     if i <= 0:
+#         return ('', filename)
+#     return (filename[i+1:], filename[:i])
+
+
+# def sort_by_ext(files: List[str]) -> List[str]:
+#     files.sort(key=extension_and_name)
+#     return files
 
 if __name__ == '__main__':
     print("Example:")
