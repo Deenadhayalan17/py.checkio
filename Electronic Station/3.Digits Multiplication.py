@@ -19,9 +19,17 @@
 # How it is used: This task can teach you how to solve a problem with simple data type conversion.
 
 # Precondition: 0 < number < 10 6
-def checkio(number: int) -> int:
 
-    return 1
+def checkio(number: int) -> int:
+    a = 1
+    b = str(number)
+    for i in b:
+        if int(i) != 0:
+            a = a * int(i)
+        else:
+            continue
+
+    return a
 
 
 if __name__ == '__main__':
