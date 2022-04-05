@@ -19,3 +19,12 @@
 # is_acceptable_password('sh5') == False
 # is_acceptable_password('1234567') == False
 # is_acceptable_password('12345678910') == True
+
+
+def is_acceptable_password(p):
+    if len(p) in range(7, 10):
+        return (any(i.isdigit() for i in p) and not p.isdigit())
+    elif len(p) > 9:
+        return True
+    else:
+        return False
